@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/ventas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+    <title>Ventas de souvenir</title>
+</head>
+<body>
+    <!--INICIO MENU--------------------------------------------------------------->
+    <div class="menu">
+        <h3>Wine Shop</h3>
+        <div class="as">
+        <a href="index.html">Home</a>
+        <a href="inventarios.html">Inventarios</a>
+        <a href="proveedores.html">Proveedores</a>
+        <a href="#">Procedimientos bodega</a>
+        </div>
+    </div>
+    <!--FIN MENU------------------------------------------------------------------>
+    <!--INICIO NAVBAR------------------------------------------------------------->
+    <div class="navbar">
+        <h1>Concha y Toro</h1>
+        <p>BODEGA WINE SHOP</p>
+        <i class="fas fa-grip-lines" id="btn-menu" onclick="menu()"></i>
+    </div>
+    <!--FIN NAVBAR---------------------------------------------------------------->
+    
+    <!--INICIO VENTAS------------------------------------------------------------->
+    <div class="ventas">
+        <h1>Ventas por unidades</h1>
+        <div class="botones">
+        <button onclick="ventasNueve()">Ventas 2019</button>
+        <button onclick="ventasVeinte()">Ventas 2020</button>
+        <button onclick="topDiez()">Top 10 souvenir mas vendidos 2020</button>
+        </div>
+    </div>
+    <!--INICIO GRAFICO 2019------------------------------------------------------------>
+    <div class="container_2019">
+        <div id="ContVentas2019" class="contenedor">
+            <div class="canvas-cont" ><canvas  id="miGrafica" width="400px" height="auto"></canvas>
+            <p>Las ventas de souvenir representaron el <span style="color: red;">38,4%</span>  del total de las ventas del año 2019</p>
+            </div>
+            
+            <img  class="img" src="images/18000004.jpg" alt="#">
+            
+        </div>
+    </div>
+   <!--INICIO GRAFICO 2020------------------------------------------------------------>
+   <div class="container_2020">
+    <div id="ContVentas2020" class="contenedor">
+        <div class="canvas-cont" ><canvas  id="miGrafica2" width="400px" height="auto"></canvas>
+        <p>Las ventas de souvenir representaron el <span style="color: red;">46,6%</span>  del total de las ventas del año 2020</p>
+        </div>
+        
+        <img  class="img" src="images/18000004.jpg" alt="#">
+        
+    </div>
+   </div>
+   <!--INICIO TOP 10 MAS VENDIDOS 2020------------------------------------------------>
+
+   <div class="top10" id="top">
+       <h1>Top 10 souvenirs mas vendidos 2020</h1>
+    <div class="top10grid">
+
+       <div class="card">
+        <p style="background: black; color: #fff;font-size: 18px;">1616 unidades vendidas</p>
+        <a href="#"></a><img src="images/18008799.jpg" alt="#"></a>
+        <h4>Iman concha y toro</h4>
+        <p>18008799</p>     
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">1314 unidades vendidas</p>
+            <a href="#"><img src="images/18002526.jpg" alt="#"></a>
+            
+            <h4>Copa tulipa tour</h4>
+            <p>18002526</p>
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">788 unidades vendidas</p>
+            <a href="#"><img src="images/18009050.jpg" alt="#"></a>
+            
+            <h4>Iman portal </h4>
+            <p>18009050</p>     
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">743 unidades vendidas</p>
+            <a href="#"><img src="images/18002222.jpg" alt="#"></a>
+            
+            <h4>Capuchon monje cafe</h4>
+            <p>18002222</p>
+        </div>
+
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">738 unidades vendidas</p>
+            <a href="#"><img src="images/18001941.jpg" alt="#"></a>
+            
+            <h4>Cdd sacacorcho nuevo</h4>
+            <p>18001941</p>
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">725 unidades vendidas</p>
+            <a href="#"><img src="images/18001669.jpg" alt="#"></a>
+            
+            <h4>Jockey cyt con logo</h4>
+            <p>18001669</p>
+        </div>
+
+        
+
+        
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">618 unidades vendidas</p>
+            <a href="#"><img src="images/18008517.jpg" alt="#"></a>
+            
+            <h4>Aireador Decantador</h4>
+            <p>18008517</p>     
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">547 unidades vendidas</p>
+            <a href="#"><img src="images/18009433.jpg" alt="#"></a>
+            
+            <h4>Tapon vino silicona</h4>
+            <p>18009433</p>
+        </div>
+
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">484 unidades vendidas</p>
+            <a href="#"><img src="images/18010423.jpg" alt="#"></a>
+            
+            <h4>Iman de madera cyt</h4>
+            <p>18010423</p>     
+        </div>
+        
+        <div class="card">
+            <p style="background: black; color: #fff;font-size: 18px;">493 unidades vendidas</p>
+            <a href="#"><img src="images/18004161.jpg" alt="#"></a>
+            
+            <h4>Funda neo 1 botella</h4>
+            <p>18004161</p>     
+        </div>
+    </div>
+   </div>
+
+
+
+
+
+    <script src="js/filtroVentas.js"></script>
+    <script src="app.js"></script>
+    <script src="js/ventas.js"></script>
+</body>
+</html>

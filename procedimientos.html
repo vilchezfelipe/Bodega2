@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/procedimientos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega Wineshop</title>
+</head>
+<body>
+    <div class="barra">
+     <h1 class="h1">Procedimientos Bodega</h1>
+     <ul>
+         
+
+         <li>Documentos</li>
+         <li> Registros Excel</li>
+         <li>Archivos físicos</li>
+         <li>Actividades</li>
+         <li>Movimientos entre almacenes internos</li>
+         <li>Movimientos de mercancías (costo y gasto)</li>
+         <li>Traspasos de vinos de planta a tienda</li>
+         <li>Rebajar cantidad de vinos consumidos en los Tour</li>
+         <li>Imprimir una copia de Orden de Compra</li>
+         <li>Listar inventario SAP y exportarlo a Excel</li>
+         <li>Reimprimir una OC</li>
+         <li>Listar stock para toma de inventario</li>
+         <li>Imprimir documento de inventario</li>
+         <li>Anular documento de inventario</li>
+         <li>Entrar recuento de inventario con documento</li>
+         <li>Modificar recuento de inventario</li>
+         <li>Reporte de diferencias e índices de inventario</li>
+         <li>Generar una OC (CYT)</li>
+         <li>Generar una OC (Gasto) Comercial Peumo</li>
+         <li>Guía gastos generales</li>
+         <li>Código Almacenes</li>
+         <li>Tips</li>
+         
+     </ul>
+    </div>
+    <!--INICIO MENU--------------------------------------------------------------->
+    <div class="menu">
+        <h3>Wine Shop</h3>
+        <div class="as">
+        <a href="index.html">Home</a>
+        <a href="ventas.html">Ventas    Souvenir</a>
+        <a href="inventarios.html">Inventarios</a>
+        <a href="proveedores.html">Proveedores</a>
+        
+        </div>
+    </div>
+    <!--FIN MENU------------------------------------------------------------------>
+    <!--INICIO NAVBAR------------------------------------------------------------->
+    <div class="navbar">
+        <h1>Concha y Toro</h1>
+        <p>BODEGA WINE SHOP</p>
+        <i class="fas fa-grip-lines" id="btn-menu" onclick="menu()"></i>
+    </div>
+    <!--FIN NAVBAR---------------------------------------------------------------->
+    <!--INICIO CONTENIDO---------------------------------------------------------->
+    <div class="contenido">
+        <h1>Documentos</h1>
+        <div>
+            <h2>Facturas</h2>
+            <p>Ingreso souvenir (Se ingresa a SAP, documento y stock) </p>
+            <p>Ingreso insumos (No Stock SAP) (Se ingresa sólo el documento al sistema SAP)</p>
+            <li>Material embalaje</li>
+            <li>Bolsas</li>
+            <li>Tabla queso</li>
+            <li>Cajas embalaje marketing (Llegan con guía de despacho de Loginsa. No se ingresa)
+                Procedimiento guía despacho con n°entrega, igual a vinos.
+            </li>
+            <p>Enviar facturas para contabilidad según procedimiento.</p>
+            <h2>Guias de despacho</h2>
+            <li>Ingreso vinos. (Kardex: Guías de despacho Comercial Peumo)</li>
+            <li>Despacho vinos a Wine Bar (Kardex: Guías de despacho emitidas)</li>
+            <li>Ventas esporádicas</li>
+            <h2>Rendición entrega productos (Entrega vinos a Tour) (Kardex Pedido vinos Wine Shop)</h2>
+            <h2>Pedido vinos Wine Shop (Kardex junto a pedido de vinos Wine Shop)</h2>
+            <h2>Material Tour-Degustación (Controla consumo de vinos Tour y Copas)(Kardex: Material Tour-Degustación)</h2>
+        </div>
+    </div>
+    
+
+
+    <script src="js/procedimientos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

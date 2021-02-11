@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(251, 142, 69);
+}
+
+.menu{
+    border-radius: 0px 0px 25px 0px;
+    height: 100vh;
+    width: 25%;
+    background: rgb(27, 27, 27);
+    color: #fff;
+    position: fixed;
+    left: -25%;
+    transition: all 300ms linear;
+}
+.menu h3{
+    text-align: center;
+    font-family: var(--h1);
+    font-size: 26px;
+    padding: 10px 0px 0px 0px;
+}
+.menu .as{
+    display: flex;
+    flex-direction: column;
+    padding : 10px;
+    margin-top: 20px;
+}
+.menu .as a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--fuenteCont);
+    font-size: 20px;
+    padding: 4px;
+    
+}
+.menu .as a:hover{
+    color: var(--colorcyt);
+}
+.menu.active{
+    left: 0;
+}
+
+/*FIN MENU*************************************************************************************/
+
+/*INICIO NAVBAR*******************************************************************************/
+
+.navbar{
+   
+    text-align: center;
+    font-family: var(--h1);
+    padding-top: 30px;
+    position: relative;
+}
+.navbar h1{
+    color: var(--colorcyt);
+}
+.navbar i{
+    position: absolute;
+    font-size: 22px;
+    right: 70px;
+    top: 50px;
+    cursor: pointer;
+}
+/*FIN NAVBAR*************************************************************************/
+
+/*INICIO BARRA PROVEEDORES**********************************************************/
+
+.proveedores{
+   margin-top: 50px;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto; 
+   background: rgb(238, 238, 238);
+   border-radius: 5px;
+   padding: 10px;
+}
+.proveedores h2{
+    font-family: var(--h1);
+    padding: 10px;
+}
+.proveedores button{
+    font-family: var(--fuenteCont);
+    margin-left: 10px;
+    border: none;
+    background: var(--colorcyt);
+    color: #fff;
+    padding: 3px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*FIN BARRA PROVEEDORES ***********************************************/
+/*INICIO LISTA DE PRODUCTOS*******************************************/
+
+.productos{
+   
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.productos .card{
+    width: 270px;
+    
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgb(211, 211, 211);
+}
+.productos .card img{
+    width: 100%;
+}
+.productos .card h4{
+    text-align: center;
+    font-family: var(--fuenteCont);
+}
+.productos .card p{
+    text-align: center;
+    font-family: var(--fuenteCont);
+}

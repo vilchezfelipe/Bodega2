@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/inventarios.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega Wineshop</title>
+</head>
+<body>
+    <!--INICIO MENU--------------------------------------------------------------->
+    <div class="menu">
+        <h3>Wine Shop</h3>
+        <div class="as">
+        
+        <a href="index.html">Home</a>
+        <a href="ventas.html">Ventas    Souvenir</a>
+        <a href="proveedores.html">Proveedores</a>
+        <a href="#">Procedimientos bodega</a>
+        </div>
+    </div>
+    <!--FIN MENU------------------------------------------------------------------>
+    <!--INICIO NAVBAR------------------------------------------------------------->
+    <div class="navbar">
+        <h1>Concha y Toro</h1>
+        <p>BODEGA WINE SHOP</p>
+        <i class="fas fa-grip-lines" id="btn-menu" onclick="menu()"></i>
+    </div>
+    <!--FIN NAVBAR---------------------------------------------------------------->
+
+    <div class="title">
+        <h2>Inventarios 2021</h2>
+    </div>
+    <button id="btnEditar" onclick="editar()">Editar información</button>
+    <div class="cajaEdicion">
+        <p>Almacén</p> <input type= "text" id="almacen">
+        <p>Fecha </p><input type="text" id="fecha">
+        <p>Doc.inventario </p><input type="text" id="documento">
+        <p>Materiales </p><input type="text" id="materiales">
+        <p>Importe </p><input type="text" id="importe">
+        <button id="btnCargar">Cargar</button>
+        <button id="btnCerrar">Cerrar</button>
+    </div>
+    <div class="inventarios">
+        
+        <div class="lis">
+            <h3>Inventario biblioteca Don Melchor</h3>
+        <li><span> Almacén:</span><span id="almacenEdit"> 0002 vinos Don Melchor</span></li>
+        <li><span>Fecha:</span><span id="fechaEdit"> 06 de enero 2021</span></li>
+        
+        <li><span>Doc.Inventario:</span><span id="documentoEdit"> 110364525</span></li>
+        <li><span>Materiales:</span><span id="materialesEdit"> 61 codigos Inventariados</span></li>
+        <p><span>Importe: </span><span id="importeEdit"> $107.604</span></p>
+        </div>
+        <img src="images/casonaDM.jpg" alt="">
+    </div>
+    <div class="inventarios">
+        
+        <div class="lis">
+            <h3>Inventario Cajas Don Melchor</h3>
+        <li><span> Almacén:</span> 0002 cajas Don Melchor</li>
+        <li><span>Fecha:</span> 29 de enero 2021</li>
+        
+        <li><span>Doc.Inventario:</span> 110364609</li>
+        <li><span>Materiales:</span> 6 codigos Inventariados</li>
+        <p><span>Importe: </span> $2.603.576</p>
+        </div>
+        <img src="images/casonaDM.jpg" alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="editar.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

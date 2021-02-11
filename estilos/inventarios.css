@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(251, 142, 69);
+}
+body{
+    position: relative;
+}
+
+.title h2{
+    font-family: var(--fuenteCont);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+#btnEditar{
+   position: absolute;
+   right: 10px;
+   top: 220px;
+   border: none;
+   font-size: 18px;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 5px;
+   color: #fff;
+   background: black;
+   outline: none;
+}
+#btnEditar:hover{
+    
+    background: var(--colorcyt);
+
+}
+.inventarios{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: #fff;
+    margin-bottom: 40px;
+    
+}
+.lis{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.lis h3{
+    font-family: var(--h1);
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.lis p span{
+    font-weight: bold;
+    font-family: var(--fuenteCont);
+    color: #fff;
+}
+.lis p{
+    font-family: var(--fuenteCont);
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 22px;
+    color: rgb(95, 223, 95);
+}
+.inventarios img{
+    width: 50%;
+}
+.inventarios li{
+    font-family: var(--fuenteCont);
+    font-size: 18px;
+}
+.inventarios li span{
+    font-weight: bold;
+    font-family: var(--fuenteCont);
+}
+.cajaEdicion{
+    margin-bottom: 10px;
+    display: none;
+}
+.cajaEdicion p{
+    margin-left: 40px;
+    font-family: var(--fuenteCont);
+}
+.cajaEdicion input{
+    margin-left: 40px;
+    font-family: var(--fuenteCont);
+    font-size: 16px;
+}
+.cajaEdicion button{
+    font-size: 16px;
+    outline: none;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cajaEdicion button:active{
+    background: var(--colorcyt);
+}
+.cajaEdicion.active{
+    display: block;
+}
+#importeEdit{
+    color: rgb(68, 221, 68);
+}

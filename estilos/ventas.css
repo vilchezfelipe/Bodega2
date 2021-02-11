@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(251, 142, 69);
+}
+.ventas{
+    margin-top: 80px;
+    
+    width: 100%;
+}
+.ventas h1{
+    font-family: var(--fuenteCont);
+    color: rgb(204, 132, 132);
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+.botones{
+    text-align: center;
+}
+.botones button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: rgb(82, 167, 82);
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--fuenteCont);
+    border-radius: 5px;
+}
+.botones button:active{
+    background: green;
+}
+
+
+/*GRAFICO******************************************************************************/
+.container_2019{
+    width: 100%;
+    /*border: 1px solid rgb(116, 116, 116);*/
+    margin-top: 40px;
+}
+.container_2019 .contenedor{
+    display: flex;
+    
+}
+.container_2019 .contenedor .canvas-cont{
+    width: 60%;
+}
+.container_2019 .contenedor .canvas-cont p{
+    font-family: var(--fuenteCont);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.container_2019 .contenedor .canvas-cont #miGrafica{
+    width: 100%;
+}
+.container_2019 .contenedor img{
+    width: 30%;
+}
+/******************/
+.container_2020{
+    width: 100%;
+    margin-top: 40px;
+    display: none;
+}
+.container_2020 .contenedor{
+    display: flex;
+    
+}
+.container_2020 .contenedor .canvas-cont{
+    width: 60%;
+}
+.container_2020 .contenedor .canvas-cont p{
+    font-family: var(--fuenteCont);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.container_2020 .contenedor .canvas-cont #miGrafica2{
+    width: 100%;
+}
+.container_2020 .contenedor img{
+    width: 30%;
+}
+
+/*TOP 10************************************************************/
+
+#top{
+    
+    display: none;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.top10 h1{
+    text-align: center;
+    font-family: var(--fuenteCont);
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.top10 .card{
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgb(211, 211, 211);
+    
+}
+.top10grid{
+    padding-left: 15px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.top10 .card img{
+    width: 100%;
+}
+.top10 .card h4{
+    text-align: center;
+    font-family: var(--fuenteCont);
+}
+.top10 .card p{
+    text-align: center;
+    font-family: var(--fuenteCont);
+}
+
+
+.container_2020.active{
+    display: block;
+}
+.container_2019.active{
+    display: none;
+}
+#top.active{
+    display: block;
+}

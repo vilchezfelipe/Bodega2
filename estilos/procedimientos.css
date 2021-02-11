@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(251, 142, 69);
+}
+
+.barra{
+    height: 100vh;
+    width: 20%;
+    background: rgb(231, 231, 231);
+    position: fixed;
+}
+.barra .h1{
+    font-family: var(--h1);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.barra ul{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    
+}
+.barra ul li{
+    padding: 3px;
+    list-style: none;
+    font-family: var(--fuenteCont);
+    cursor: pointer;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+.barra ul li:active{
+    background: rgb(211, 211, 211);
+}
+/*INICIO CONTENIDO***********************************/
+.contenido{
+    border: 1px solid rgb(192, 192, 192);
+    height: 100vh;
+    margin-left: 320px;
+}
+.contenido h1{
+    font-family: var(--fuenteCont);
+    font-size: 22px;
+    margin-top: 10px;
+}
